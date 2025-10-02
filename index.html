@@ -1,14 +1,127 @@
- <html>
-    <head>
-        <title>
-            with ai
-        </title>
-    </head>
-    <body>
-        <h1>Akash Tiwari</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloribus molestiae sapiente, cum sunt libero dolore voluptatibus excepturi dolorum iusto?</p>
-        <a href="https://pioneerpublicschool.co.in/">Pioneer Public School and College Balrampur</a>
+<!DOCTYPE html> <!-- Declares the document type and version of HTML (HTML5 here) -->
+<html>
+<head>
+    <!-- 
+        <head> contains meta-information about the document, such as title, character encoding, and links to styles/scripts.
+        It is not displayed on the web page.
+    -->
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8, supporting most languages and symbols -->
+    <title>HTML Concepts Revision</title>
+    <!-- 
+        CSS Styles for headings 
+        h2: Yellow text on red background
+        h1.pehlawala: Red text on blue background
+        h1.dusrawala: Will use inline style in body
+    -->
+    <style>
+        h2 {
+            color: yellow;
+            background-color: red;
+        }
+        .pehlawala {
+            color: red;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Heading with class and CSS styling -->
+    <h1 class="pehlawala">Akash Tiwari</h1>
 
-    </body>
-    <!-- <a> akash </a> --><!--When you write anything outside the <head> and <body> tags in HTML, browsers will try to fix the structure automatically. Most browsers move misplaced elements (like your <a> akash </a>) into the <body> section when rendering the page. However, this is not valid HTML and can lead to unpredictable results or issues with validation and accessibility. It's best practice to keep all visible content inside the <body> tag.-->
- </html>
+    <!-- Paragraph: Basic text content -->
+    <p>
+        This is a sample paragraph. HTML paragraphs are block-level elements and ignore extra spaces and line breaks by default.
+    </p>
+
+    <!-- Heading 2: Demonstrates CSS styling -->
+    <h2>Styled Heading (h2)</h2>
+
+    <!-- Anchor tags: Different target attributes -->
+    <!-- _blank: Opens link in new tab -->
+    <div>
+        <a target="_blank" href="https://pioneerpublicschool.co.in/">
+            Open Pioneer Public School Website (New Tab)
+        </a>
+    </div>
+    <!-- _top: Opens link in full body of the window -->
+    <div>
+        <a target="_top" href="https://pioneerpublicschool.co.in/">
+            Open in Top Frame
+        </a>
+    </div>
+    <!-- _parent: Opens link in parent frame -->
+    <div>
+        <a target="_parent" href="https://pioneerpublicschool.co.in/">
+            Open in Parent Frame
+        </a>
+    </div>
+    <!-- _self: Opens link in same frame (default) -->
+    <div>
+        <a target="_self" href="https://pioneerpublicschool.co.in/">
+            Open in Same Frame
+        </a>
+    </div>
+
+    <!-- Image tag: src, width, alt attributes -->
+    <img 
+        src="https://pioneerpublicschool.co.in/sites/all/themes/pps/images/banner.jpg" 
+        width="600" 
+        alt="Front picture of Pioneer Public School"
+    />
+
+    <!-- Demonstrating default display behavior of HTML -->
+    <p>
+        monika is             good 
+        girl.
+    </p>
+    <!-- The above paragraph ignores extra spaces and line breaks -->
+
+    <!-- <pre> tag preserves spaces and line breaks exactly as written -->
+    <pre>
+monika is                           good 
+    girl
+    </pre>
+
+    <!-- Using &nbsp; for extra spaces and <br> for line break -->
+    <p>
+        akash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tiwari<br>
+        boy
+    </p>
+
+    <!-- <q> tag for short inline quotations -->
+    <q>akash</q>
+
+    <!-- Inline style attribute for heading -->
+    <h1 class="dusrawala" style="color: red; background-color: black;">
+        This heading uses inline CSS styling
+    </h1>
+
+    <!-- Text formatting tags demonstration -->
+    <h3>akash <b>tiwari</b> <!-- Bold text --></h3>
+    <h3>akash <em>tiwari</em> <!-- Emphasized (italic) text --></h3>
+    <h3>akash <i>tiwari</i> <!-- Italic text --></h3>
+    <h3>akash <small>tiwari</small> <!-- Smaller text --></h3>
+    <h3>akash <strong>tiwari</strong> <!-- Strong importance (bold) --></h3>
+    <h3>akash <sub>tiwari</sub> <!-- Subscript text --></h3>
+    <h3>akash <ins>tiwari</ins> <!-- Inserted (underlined) text --></h3>
+    <h3>akash <del>tiwari</del> <!-- Deleted (strikethrough) text --></h3>
+    <h3>akash <mark>tiwari</mark> <!-- Marked (highlighted) text --></h3>
+
+    <!-- Mailto link: Opens default email client -->
+    <a href="mailto:akashtiwaripps007@gmail.com">Mail me</a>
+
+    <!-- 
+        Revision Notes:
+        - <!DOCTYPE html>: Declares HTML5 document type.
+        - <head>: Contains meta info, title, and links to styles/scripts.
+        - <meta charset="UTF-8">: Sets character encoding to UTF-8.
+        - Use <style> for CSS.
+        - Use <a> for hyperlinks, with different target attributes for link behavior.
+        - <img> for images, always use alt for accessibility.
+        - <pre> preserves formatting, but not recommended for regular text.
+        - Use &nbsp; for spaces and <br> for line breaks.
+        - Use semantic tags (<b>, <em>, <strong>, <mark>, etc.) for text formatting.
+        - Use comments (<!-- -->) to explain code for revision.
+    -->
+</body>
+</html>

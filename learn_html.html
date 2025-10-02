@@ -1,0 +1,207 @@
+<!DOCTYPE html> <!-- Declares the document type and version of HTML (HTML5 here) -->
+<html>
+<head>
+    <!-- 
+        <head> contains meta-information about the document, such as title, character encoding, and links to styles/scripts.
+        It is not displayed on the web page.
+    -->
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8, supporting most languages and symbols -->
+    <title>HTML Concepts Revision</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background: #f9f9f9;
+        }
+        .explain {
+            background: #e3f2fd;
+            border-left: 4px solid #1976d2;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+        h2 {
+            color: yellow;
+            background-color: red;
+            padding: 5px;
+        }
+        .pehlawala {
+            color: red;
+            background-color: blue;
+            padding: 5px;
+        }
+        .dusrawala {
+            color: red;
+            background-color: black;
+            padding: 5px;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+        }
+        code {
+            background: #fffde7;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Concepts Revision</h1>
+    <div class="explain">
+        <b>&lt;!DOCTYPE html&gt;</b> <br>
+        Declares the document type and version of HTML (HTML5). It helps browsers render the page correctly.
+    </div>
+    <div class="explain">
+        <b>&lt;html&gt;</b> <br>
+        The root element of an HTML page. All content goes inside this tag.
+    </div>
+    <div class="explain">
+        <b>&lt;head&gt;</b> <br>
+        Contains meta-information (not shown on the page), like title, character encoding, and links to CSS/JS.
+    </div>
+    <div class="explain">
+        <b>&lt;meta charset="UTF-8"&gt;</b> <br>
+        Sets the character encoding to UTF-8, supporting most languages and symbols.
+    </div>
+    <div class="explain">
+        <b>&lt;title&gt;</b> <br>
+        Sets the title of the page (shown in browser tab).
+    </div>
+    <div class="explain">
+        <b>&lt;style&gt;</b> <br>
+        Used to write CSS (Cascading Style Sheets) for styling HTML elements.
+    </div>
+
+    <div class="section">
+        <h1 class="pehlawala">&lt;h1&gt; Akash Tiwari &lt;/h1&gt;</h1>
+        <div class="explain">
+            <b>&lt;h1&gt; to &lt;h6&gt;</b> are heading tags. <br>
+            <b>&lt;h1&gt;</b> is the largest, used for main headings. <br>
+            <b>class="pehlawala"</b> applies CSS for red text on blue background.
+        </div>
+    </div>
+
+    <div class="section">
+        <p>This is a sample paragraph. HTML paragraphs are block-level elements and ignore extra spaces and line breaks by default.</p>
+        <div class="explain">
+            <b>&lt;p&gt;</b> defines a paragraph. Extra spaces and line breaks are ignored.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Styled Heading (h2)</h2>
+        <div class="explain">
+            <b>&lt;h2&gt;</b> is a sub-heading. Here, styled with yellow text on red background using CSS.
+        </div>
+    </div>
+
+    <div class="section">
+        <div><a target="_blank" href="https://pioneerpublicschool.co.in/">Open Pioneer Public School Website (New Tab)</a></div>
+        <div><a target="_top" href="https://pioneerpublicschool.co.in/">Open in Top Frame</a></div>
+        <div><a target="_parent" href="https://pioneerpublicschool.co.in/">Open in Parent Frame</a></div>
+        <div><a target="_self" href="https://pioneerpublicschool.co.in/">Open in Same Frame</a></div>
+        <div class="explain">
+            <b>&lt;a&gt;</b> is the anchor tag, used for hyperlinks.<br>
+            <b>href</b> specifies the link.<br>
+            <b>target</b> controls where the link opens:<br>
+            <code>_blank</code> (new tab), <code>_top</code> (full window), <code>_parent</code> (parent frame), <code>_self</code> (same frame, default).
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="https://pioneerpublicschool.co.in/sites/all/themes/pps/images/banner.jpg" width="600" alt="Front picture of Pioneer Public School"/>
+        <div class="explain">
+            <b>&lt;img&gt;</b> displays an image.<br>
+            <b>src</b>: image URL<br>
+            <b>width</b>: width in pixels<br>
+            <b>alt</b>: alternative text for accessibility
+        </div>
+    </div>
+
+    <div class="section">
+        <p>monika is             good 
+            girl.
+        </p>
+        <div class="explain">
+            <b>Default display:</b> HTML ignores extra spaces and line breaks in paragraphs.
+        </div>
+        <pre>monika is                           good 
+    girl
+        </pre>
+        <div class="explain">
+            <b>&lt;pre&gt;</b> preserves spaces and line breaks exactly as written. Useful for code or formatted text.
+        </div>
+        <p>akash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tiwari<br>boy</p>
+        <div class="explain">
+            <b>&amp;nbsp;</b> adds extra spaces.<br>
+            <b>&lt;br&gt;</b> inserts a line break.
+        </div>
+    </div>
+
+    <div class="section">
+        <q>akash</q>
+        <div class="explain">
+            <b>&lt;q&gt;</b> is for short inline quotations (adds quotation marks).
+        </div>
+    </div>
+
+    <div class="section">
+        <h1 class="dusrawala" style="color: red; background-color: black;">
+            This heading uses inline CSS styling
+        </h1>
+        <div class="explain">
+            <b>Inline style:</b> <code>style="color: red; background-color: black;"</code> applies CSS directly to the element.
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>akash <b>tiwari</b></h3>
+        <div class="explain">
+            <b>&lt;b&gt;</b> makes text bold.
+        </div>
+        <h3>akash <em>tiwari</em></h3>
+        <div class="explain">
+            <b>&lt;em&gt;</b> emphasizes text (usually italic).
+        </div>
+        <h3>akash <i>tiwari</i></h3>
+        <div class="explain">
+            <b>&lt;i&gt;</b> italicizes text.
+        </div>
+        <h3>akash <small>tiwari</small></h3>
+        <div class="explain">
+            <b>&lt;small&gt;</b> makes text smaller.
+        </div>
+        <h3>akash <strong>tiwari</strong></h3>
+        <div class="explain">
+            <b>&lt;strong&gt;</b> indicates strong importance (usually bold).
+        </div>
+        <h3>akash <sub>tiwari</sub></h3>
+        <div class="explain">
+            <b>&lt;sub&gt;</b> makes text subscript (below the line).
+        </div>
+        <h3>akash <ins>tiwari</ins></h3>
+        <div class="explain">
+            <b>&lt;ins&gt;</b> shows inserted (underlined) text.
+        </div>
+        <h3>akash <del>tiwari</del></h3>
+        <div class="explain">
+            <b>&lt;del&gt;</b> shows deleted (strikethrough) text.
+        </div>
+        <h3>akash <mark>tiwari</mark></h3>
+        <div class="explain">
+            <b>&lt;mark&gt;</b> highlights text.
+        </div>
+    </div>
+
+    <div class="section">
+        <a href="mailto:akashtiwaripps007@gmail.com">Mail me</a>
+        <div class="explain">
+            <b>&lt;a href="mailto:..."&gt;</b> creates a link to open the default email client to send an email.
+        </div>
+    </div>
+</body>
+</html>
